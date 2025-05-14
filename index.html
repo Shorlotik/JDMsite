@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание вашего сайта">
+    <meta name="keywords" content="ключевые, слова, вашего, сайта">
+    <title>JDM Legend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.jfif" type="image/x-icon">
+</head>
+<body>
+<header>
+    <nav>
+    </nav>
+    <div class="user-actions" id="user-actions" style="display: none;">
+        <span id="user-info">Вы вошли в аккаунт: <span id="logged-in-user"></span></span>
+        <button type="button" id="logout-button">Выйти</button>
+    </div>
+    <button type="button" id="login-submit">Войти</button>
+
+    <div id="login-form-container" class="user-form" style="display: none;">
+        <form id="login-form">
+            <label for="login-username">Имя пользователя:</label>
+            <input type="text" id="login-username" name="login-username" required>
+            <label for="login-password">Пароль:</label>
+            <input type="password" id="login-password" name="login-password" required>
+            <button type="submit" id="login-button">Войти</button>
+        </form>
+    </div>
+</header>
+<section id="home">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="background2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="background1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="background.png.jpg" style="width:100%">
+        </div>
+    </div>
+    <div id="protected-content" style="display: none;">
+    <div class="container">
+        <h1>Добро пожаловать на JDM Legend</h1>
+        <p>Здесь вы найдете всю необходимую информацию о нашей компании и коллекции легендарных японских автомобилей, доступную исключительно для наших сотрудников.</p>
+        <div class="knowledge-base">
+            <label for="search_query_knowledge"></label>
+            <input type="text" id="search_query_knowledge" placeholder="Поиск">
+            <button onclick="searchKnowledgeBase()">Поиск</button>
+            <div class="search-results-container" id="search-results"></div>
+        </div>
+    </div>
+    </div>
+</section>
+<section id="support">
+    <div class="container">
+        <h2>Поддержка</h2>
+        <p>Если у вас есть вопросы или вам нужна помощь, пожалуйста, свяжитесь с нами:</p>
+        <p><strong>Email:</strong> prokopchik_mo_21@mf.grsu.by</p>
+        <p><strong>Телефон:</strong> +375 (29) 207-92-51</p>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100034704820214" class="footer-social-icon">Facebook</a>
+            <a href="https://twitter.com/Shorl0tik" class="footer-social-icon">Twitter</a>
+            <a href="https://www.instagram.com/ma8sim8/" class="footer-social-icon">Instagram</a>
+            <a href="https://t.me/+VCalVYwbaypiM2Uy" class="footer-social-icon">Telegram</a>
+        </div>
+        <p class="footer-signature">© 2023 JDM Legend</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
